@@ -4,7 +4,7 @@ import reactLogo from './assets/react.svg';
 
 import './App.css';
 
-function App() {
+function App(): JSX.Element {
   const [count, setCount] = useState(0);
 
   return (
@@ -19,7 +19,7 @@ function App() {
       </div>
       <h1>Vite + React</h1>
       <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
+        <button type="button" onClick={() => setCount((cardCount) => cardCount + 1)}>
           count is
           {' '}
           {count}
